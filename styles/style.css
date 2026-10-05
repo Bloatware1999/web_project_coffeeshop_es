@@ -12,7 +12,7 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2"); 
+  src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -27,13 +27,16 @@ body {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/inter-v20-latin-700.woff2") format("woff2"); 
+  src: url("./fonts/inter-v20-latin-700.woff2") format("woff2");
+}
+
 /* noto-serif-italic - latin */
 @font-face {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("./fonts/noto-serif-v33-latin-italic.woff2") format("woff2"); 
+  src: url("./fonts/noto-serif-v33-latin-italic.woff2") format("woff2");
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -48,6 +51,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
