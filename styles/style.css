@@ -46,7 +46,7 @@ body {
   padding: 30px 80px 40px;
   position: relative;
   box-sizing: border-box;
-  background: #fff url("Images/background_header.svg");
+  background: #fff url("../Images/background_header.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -139,15 +139,20 @@ body {
   margin: 0;
 }
 
-.content {
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 120px;
   background-color: #ffd6c5;
-  background-image: url("Images/background_reservation.svg");
+  background-image: url("../Images/background_reservation.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
+}
+
+.reservation__title {
+  margin: 0 0 80px;
 }
 
 .form-container__title {
@@ -213,8 +218,8 @@ body {
   background-color: #e96e3a;
 }
 
-.form__button--submit:hover {
-  background-color: #d35722;
+.form__button:hover {
+  opacity: 0.7;
 }
 
 .form__checkbox {
@@ -223,15 +228,20 @@ body {
 }
 
 .footer {
+  position: relative;
+  overflow: hidden;
   background-color: #d35722;
 }
 
 .circle {
-  background-color: #e96e3a;
-  border-radius: 128px 0px 0px 44px;
-  display: flex;
   position: absolute;
-  z-index: 1;
+  top: -128px;
+  left: -44px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+  z-index: 2;
 }
 
 .footer-nav {
@@ -270,12 +280,16 @@ body {
 .logo__light {
   height: 39px;
   width: 105px;
-}
+  z-index: 1;
 
 .social-media__icon {
   height: 20px;
   width: 20px;
   margin-right: 8px;
+}
+
+.social-media:hover {
+  color: #ffd6c5;
 }
 
 .copyrigth {

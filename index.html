@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triple Espresso</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="Styles/normalize.css" />
-    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+<link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,10 +56,10 @@
         <p class="info-text">Avenida del Éxito 200, Ciudad Triple Espresso</p>
       </div>
     </header>
-    <main class="content">
-      <section class="reservation">
-        <div class="form-container">
-      <h1 class="form-container__title">Reservar una mesa</h1>
+   <section class="reservation" id="reservation">
+     <h2 class="reservation__title">Reservar una mesa</h2>
+        <form class="form">Reservar una mesa</form>
+    </section>
       <form class="form" action="/procesar-formulario" method="post">
         <label class="form__label" for="nombre">Nombre*</label>
         <input
@@ -87,14 +87,13 @@
           >Fecha y hora*</label
         >
         <input
-          type="date"
+          type="datetime-local"
           class="form__input"
-          placeholder="dd/mm/aaaa"
           required
           id="fechaReserva"
         />
 
-        <label class="form__label" for="correoElectrónico"
+        <label class="form__label" for="email"
           >Tu correo electrónico</label
         >
         <input
@@ -102,21 +101,21 @@
           class="form__input"
           required
           placeholder="email@email.com"
-          id="correoElectrónico"
+          id="email"
         />
          <div class="form__buttons">
           <button type="submit"class="form__button form__button--submit">Reservar una mesa</button>
         </div>
        
-        <label for="términos" class=form__label></label>
-        <div class="form__checkbox">
-        <input class=form__checkbox-input type="checkbox" id="términos" required>Acepto los términos de uso
-        </div>
-        </label>
-       
+        <button type="submit" class="form__button">Reservar una mesa</button>
+    <label class="form__label form__label_type_checkbox">
+      <input type="checkbox" class="form__checkbox" required />
+         Acepto los términos de uso
+      </label>
+      </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="circle"></div>
       <nav class="footer-nav">
         <img
@@ -124,17 +123,23 @@
           alt="Triple Espresso Logo"
           class="logo__light"
         />
-        <ul class="social-medias">
-          <h1 class="social-medias__title">Redes Sociales</h1>
-          <li src="Images/facebook_icon.svg" alt="Facebook Icon">
-            <img class="social-media__icon" src="Images/facebook_icon.svg" alt="Facebook Icon" />
-            <a class="social-media" href="#reservation">facebook</a>
-          </li>
-          <li src="Images/instagram_icon.svg" alt="Instagram Icon">
-            <img class="social-media__icon" src="Images/instagram_icon.svg" alt="Instagram Icon" />
-            <a class="social-media" href="#footer">Instagram</a>
-          </li>
-        </ul>
+        <div class="footer__social">
+  <p class="footer__social-title">Redes sociales</p>
+  <ul class="footer__list">
+    <li>
+      <a href="#reservation" class="footer__link">
+        <img src="Images/facebook_white.svg" alt="Ícono de Facebook" class="footer__icon" />
+        facebook
+      </a>
+    </li>
+    <li>
+      <a href="#footer" class="footer__link">
+        <img src="Images/instagram_white.svg" alt="Ícono de Instagram" class="footer__icon" />
+        Instagram
+      </a>
+    </li>
+  </ul>
+</div>
       </nav>
       <p class="copyrigth">@2026 Juan Manuel Mejia Villanueva</p>
     </footer>
