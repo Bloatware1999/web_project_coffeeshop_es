@@ -6,7 +6,7 @@
     <title>Triple Espresso</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
-<link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,63 +56,60 @@
         <p class="info-text">Avenida del Éxito 200, Ciudad Triple Espresso</p>
       </div>
     </header>
-   <section class="reservation" id="reservation">
-     <h2 class="reservation__title">Reservar una mesa</h2>
+    <main>
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
         <form class="form">Reservar una mesa</form>
-    </section>
-      <form class="form" action="/procesar-formulario" method="post">
-        <label class="form__label" for="nombre">Nombre*</label>
-        <input
-          type="text"
-          class="form__input"
-          minlength="1"
-          maxlength="50"
-          required
-          placeholder="Nombre"
-          id="nombre"
-        />
 
-        <label class="form__label" for="comensales">Número de comensales*</label>
-        <input
-          type="number"
-          class="form__input"
-          min="1"
-          max="8"
-          required
-          placeholder="1-8"
-          id="comensales"
-        />
+        <form class="form" action="/procesar-formulario" method="post">
+          <label class="form__label" for="nombre">Nombre*</label>
+          <input
+            type="text"
+            class="form__input"
+            minlength="1"
+            maxlength="50"
+            required
+            placeholder="Nombre"
+            id="nombre"
+          />
+          <label class="form__label" for="comensales"
+            >Número de comensales*</label
+          >
+          <input
+            type="number"
+            class="form__input"
+            min="1"
+            max="8"
+            required
+            placeholder="1-8"
+            id="comensales"
+          />
 
-        <label class="form__label" for="fechaReserva"
-          >Fecha y hora*</label
-        >
-        <input
-          type="datetime-local"
-          class="form__input"
-          required
-          id="fechaReserva"
-        />
+          <label class="form__label" for="fechaReserva">Fecha y hora*</label>
+          <input
+            type="datetime-local"
+            class="form__input"
+            required
+            id="fechaReserva"
+          />
 
-        <label class="form__label" for="email"
-          >Tu correo electrónico</label
-        >
-        <input
-          type="email"
-          class="form__input"
-          required
-          placeholder="email@email.com"
-          id="email"
-        />
-         <div class="form__buttons">
-          <button type="submit"class="form__button form__button--submit">Reservar una mesa</button>
-        </div>
-       
-        <button type="submit" class="form__button">Reservar una mesa</button>
-    <label class="form__label form__label_type_checkbox">
-      <input type="checkbox" class="form__checkbox" required />
-         Acepto los términos de uso
-      </label>
-      </form>
+          <label class="form__label" for="email">Tu correo electrónico</label>
+          <input
+            type="email"
+            class="form__input"
+            required
+            placeholder="email@email.com"
+            id="email"
+          />
+          <button type="submit" class="form__button form__button--submit">
+            Reservar una mesa
+          </button>
+
+          <label class="form__label form__label_type_checkbox">
+            <input type="checkbox" class="form__checkbox" required />
+            Acepto los términos de uso
+          </label>
+        </form>
       </section>
     </main>
     <footer class="footer" id="footer">
@@ -124,22 +121,30 @@
           class="logo__light"
         />
         <div class="footer__social">
-  <p class="footer__social-title">Redes sociales</p>
-  <ul class="footer__list">
-    <li>
-      <a href="#reservation" class="footer__link">
-        <img src="Images/facebook_white.svg" alt="Ícono de Facebook" class="footer__icon" />
-        facebook
-      </a>
-    </li>
-    <li>
-      <a href="#footer" class="footer__link">
-        <img src="Images/instagram_white.svg" alt="Ícono de Instagram" class="footer__icon" />
-        Instagram
-      </a>
-    </li>
-  </ul>
-</div>
+          <p class="footer__social-title">Redes sociales</p>
+          <ul class="footer__list">
+            <li>
+              <a href="#reservation" class="footer__link">
+                <img
+                  src="Images/facebook_white.svg"
+                  alt="Ícono de Facebook"
+                  class="footer__icon"
+                />
+                facebook
+              </a>
+            </li>
+            <li>
+              <a href="#footer" class="footer__link">
+                <img
+                  src="Images/instagram_white.svg"
+                  alt="Ícono de Instagram"
+                  class="footer__icon"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <p class="copyrigth">@2026 Juan Manuel Mejia Villanueva</p>
     </footer>
